@@ -1,0 +1,19 @@
+body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2 {
+    padding-top: 50px;
+}
+.box {
+    display: grid;
+    grid-template-columns: 270px 270px 270px;
+    grid-template-rows: 200px 200px 200px;
+    grid-gap: 20px 20px;
+    margin-left: 20%;
+    padding: 20px;
+    border: 2px; 
+    /* <!--nk nedaro--> */
+    box-shadow: 5px; 
+    /* <!--nk nedaro--> */
+}
