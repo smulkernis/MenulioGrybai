@@ -3,16 +3,17 @@ h1{
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 45px;
+    color: rgb(37, 37, 37);
 }
 hr{
     width: 85px;
-    border: 5px solid black;
+    border: 5px solid rgb(37, 37, 37);
     border-radius: 5px;
     margin-top: -25px;
     margin-bottom: 80px;
 }
 .fon{
-    background-color: rgb(74, 100, 133);
+    background-color: rgba(12, 66, 110, 0.322);
     background-blend-mode: overlay;
     background-image: url(../img/car\ big.png);
     background-size: 100%;
@@ -48,4 +49,6 @@ button{
     margin-top: 115px;
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
+    border: 0;
+    color: rgb(11, 11, 11);
 }
