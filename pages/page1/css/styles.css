@@ -91,19 +91,19 @@ hr{
 .box {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 300px 250px;
+    grid-template-rows: auto auto;
     justify-content: center;
     margin: 50px auto;
     width: 90%;
-    
 }
 
 .item1 {
-    font-size: 14px;
-    margin: 25px;
-    margin-top: 0px;
-    text-align: center;
+    font-size: 15px;
     line-height: 1.8;
+    overflow-wrap: break-word;
+    word-wrap: break-word; 
+    padding: 20px;
+    margin-top: 25px;
 }
 
 .item1 h2 {
@@ -111,22 +111,17 @@ hr{
     margin: 0px;
 }
 
-.item2,
-.item4,
-.item6 {
-    background-size: cover;
+.grid-item img {
+    max-width: 100%;
+    height: auto; 
+    margin: auto;
 }
 
-.item2 {
-    background-image: url(../img/tires1.png);
-}
-
-.item4 {
-    background-image: url(../img/tires2.png);
-}
-
-.item6 {
-    background-image: url(../img/tires3.png);
+.grid-item {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
 }
 
 button {
