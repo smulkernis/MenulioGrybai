@@ -1,37 +1,116 @@
-h1{
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* header stuff here */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 0 20px;
+    box-shadow: 0px 25px 25px rgb(236, 236, 236);
+}
+
+.logo img {
+    height: 70px; 
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    
+    font-size: 14px;
+}
+
+.contact-info .material-icons {
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.contact-gap {
+    width: 25px;
+}
+
+.menu {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.menu .material-icons {
+    font-size: 36px;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .menu {
+        margin-top: 10px;
+    }
+}
+
+
+/* main content here */
+
+.main {
+    width: 80%;
+    height: auto;
+}
+
+h1 {
     display: flex;
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 45px;
     color: rgb(37, 37, 37);
 }
-hr{
+
+hr {
     width: 85px;
     border: 5px solid rgb(37, 37, 37);
     border-radius: 5px;
     margin-top: -25px;
-    margin-bottom: 80px;
+    margin-left: auto;
+    margin-right: auto;
 }
-.fon{
+
+.fon {
     background-color: rgba(12, 66, 110, 0.322);
     background-blend-mode: overlay;
     background-image: url(../img/car\ big.png);
-    background-size: auto;
+    background-size: cover; 
+    background-position: center; 
     background-repeat: no-repeat;
     height: 772px;
+    position: relative; 
 }
-h2{
+
+h2 {
     display: flex;
     justify-content: center;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 20;
     padding-top: 170px;
     word-spacing: 10px;
     font-size: 34px;
-
 }
-.text{
+
+.text {
     margin-left: auto;
     margin-right: auto;
     width: 59%;
@@ -41,7 +120,8 @@ h2{
     color: white;
     line-height: 30px;
 }
-button{
+
+button {
     margin: 0 auto;
     display: block;
     width: 300px;
@@ -51,4 +131,147 @@ button{
     font-family: Arial, Helvetica, sans-serif;
     border: 0;
     color: rgb(11, 11, 11);
+}
+
+
+.arrow-buttons {
+    position: absolute;
+    top: 20%; 
+    right: 20px;
+}
+
+.arrow-btn {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    border: none;
+    cursor: pointer;
+
+}
+
+.arrow-buttons a {
+    text-decoration: none;
+}
+
+.arrow-btn .material-icons {
+    color: white;
+    font-size: 24px;
+}
+
+.nav-button:hover {
+    background-color: #0c426e;
+    color: white;
+}
+
+/* Footer content starts here */
+
+footer {
+    background-color: #2c2c2c;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.footer-section {
+    flex-basis: 23%;
+    margin-bottom: 20px;
+}
+
+.footer-section h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footer-section p, 
+.footer-section a {
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    line-height: 24px;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.newsletter input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.newsletter button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.newsletter button:hover {
+    background-color: #003d80;
+}
+
+/* Footer very bottom icons */
+
+.footer-content {
+    text-align: left;
+    margin: 100px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px 0;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0px;
+    transition: 0.3s;
+    text-decoration: none;
+    width: 24px;
+    height: 24px;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+}
+
+.footer-bottom hr {
+    width: 80%; 
+    max-width: 800px; 
+    margin: 20px auto; 
+    border-top: 1px solid white;
+}
+
+.footer-bottom p {
+    font-size: 13px;
+    color: white;
 }

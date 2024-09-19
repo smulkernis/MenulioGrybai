@@ -159,6 +159,11 @@ header {
     background-color: #333;
     border: none;
     cursor: pointer;
+
+}
+
+.arrow-buttons a {
+    text-decoration: none;
 }
 
 .arrow-btn .material-icons {
