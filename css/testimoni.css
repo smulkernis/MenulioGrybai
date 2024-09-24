@@ -162,16 +162,20 @@ h4 {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    font-size: 18px;
 }
 
 .rotate {
     transform: rotate(180deg);
+    background-color: black;
+    font-size: 18px;
 }
 
 .arrow-buttons {
     position: absolute;
     top: 35%;
     right: 20px;
+    
 }
 
 .arrow-btn {
@@ -184,6 +188,7 @@ h4 {
     border: none;
     cursor: pointer;
     margin-top: 15px;
+    border-radius: 0px;
 }
 
 .arrow-buttons a {
